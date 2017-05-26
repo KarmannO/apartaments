@@ -4,32 +4,53 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="assets/custom/main-page.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: DINNextCYR-Light;
+            src: url("/assets/bootstrap/fonts/DINNextCYR-Light.otf");
+        }
+    </style>
 </head>
 <body ng-controller="index">
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/">Одностраничное приложение</a>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#!/site/index"><i class="glyphicon glyphicon-home"></i> Главная</a></li>
-                <li><a href="#!/site/about"><i class="glyphicon glyphicon-tag"></i> О приложении</a></li>
-                <li><a href="#!/site/contact"><i class="glyphicon glyphicon-envelope"></i> Обратная связь</a></li>
-            </ul>
+    <div class="layout-header-container">
+        <div class="layout-header">
+            <div class="layout-header-element">Главная</div>
+            <div class="layout-header-element">Апартаменты</div>
+            <div class="layout-header-element">Процесс заселения</div>
+            <div class="layout-header-element">О нас</div>
+            <div class="layout-header-element">Контакты</div>
         </div>
-    </nav>
-    <div id="main" class="container">
+    </div>
+
+    <div id="main">
         <!-- Здесь будет динамическое содержимое -->
         <div ng-view></div>
     </div>
 
-    <footer class="text-center">
-        <p>Работает на Yii 2.0.4 и AngularJs 1.3.15</p>
+    <footer class="layout-footer">
+        © 2017 Апартаменты посуточно "Хабаровск".
     </footer>
 
     <script src="assets/angular/angular.min.js"></script>
     <script src="assets/angular/angular-route.min.js"></script>
     <script src="app.js"></script>
     <script src="controllers/site.js"></script>
+    <script src="models/type.js"></script>
+    <script src="controllers/type.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(window).scroll(function () {
+            var top = $(this).scrollTop();
+            var header = $('.layout-header-container');
+            if(top != 0) {
+                //header.css("background-color", "white");
+                header.animate({backgroundColor: '#AAAAAA'}, 100);
+            }
+            else
+                header.css("background-color", "transparent");
+        });
+    </script>
 </body>
 </html>

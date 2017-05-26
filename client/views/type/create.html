@@ -1,0 +1,17 @@
+<div>
+    <h1>Каталог типов квартир: добавление нового типа</h1>
+
+    <p>{{ message}}</p>
+    <form role="form" name="myForm">
+        <div class= "form-group" ng-class="{error: myForm.description.$invalid}">
+            <label> Описание </label>
+            <div>
+                <textarea name="description" ng-model="type.description" class= "form-control" placeholder= "Описание типа квартиры"></textarea>
+                <span ng-show="myForm.description.$dirty && myForm.description.$invalid" class="help-inline">Название обязательно</span>
+            </div>
+        </div>
+        <a href="#!/type/index" class="btn btn-default">Cancel</a>
+        <button ng-click="createType(type);"
+                type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>

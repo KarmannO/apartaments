@@ -1,0 +1,17 @@
+<div>
+    <h1>Каталог фильмов: редактирование фильма</h1>
+
+    <p>{{ message}}</p>
+    <form role="form" name="myForm">
+        <div class= "form-group">
+            <label> Описание </label>
+            <div>
+                <textarea name="storyline" ng-model="type.description" class= "form-control" placeholder= "Описание типа квартиры"></textarea>
+            </div>
+        </div>
+
+        <a href="#/film/index" class="btn btn-default">Cancel</a>
+        <button ng-click="updateType(type);"
+                type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>

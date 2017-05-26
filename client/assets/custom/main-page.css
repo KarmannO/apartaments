@@ -1,0 +1,245 @@
+.layout-header-container
+{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 1000;
+}
+
+video {
+    position: absolute;
+    z-index: -10;
+    background-size: 100% 100%;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 80%;
+    width: auto;
+    height: auto;
+}
+
+.layout-header
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.layout-header-element
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.layout-footer
+{
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    z-index: 1001;
+}
+
+.landing-header-video-container
+{
+    width: 100%;
+    height: 540px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.landing-header-heading-container
+{
+    z-index: 999;
+}
+
+.landing-header-heading-container-vertical
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.heading-heading
+{
+    font-family: "DINNextCYR-Light";
+    font-size: 19px;
+}
+
+.heading-city
+{
+    color: white;
+    font-size: 80px;
+    font-family: "Lobster";
+    font-style: italic;
+}
+
+.heading-number
+{
+    margin-top: 0px;
+    font-family: "DINNextCYR-Light";
+    font-size: 30px;
+    text-align: right;
+}
+
+.button-booking-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button-booking {
+    border: 3px solid transparent;
+    padding: 5px;
+    -webkit-transition: border 1s;
+    color: white;
+}
+
+.button-booking:hover {
+    border: 3px solid white;
+}
+
+.booking-widget {
+    background: rgba(50, 50, 50, 0.3);
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+.booking-widget-element {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.booking-widget-element > label {
+    font-family: "DINNextCYR-Light";
+    font-size: 10px;
+    text-align: left;
+    font-style: normal;
+}
+
+.booking-widget-element > input[type=date] {
+    border: none;
+    width: 120px;
+}
+
+.booking-widget-element > input[type=number] {
+    border: none;
+    width: 60px;
+}
+
+.booking-widget-element > button {
+    font-size: 10px;
+    color: white;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #94B0DA;
+    border: none;
+    width: 120px;
+    height: 21px;
+}
+
+.landing-gis-container {
+    background-color: white;
+    height: 300px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.landing-apartaments-container {
+    height: 300px;
+    background-image: url("http://server.apartaments/apartaments-landing.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.landing-apartaments-container-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.landing-apartaments-header {
+    color: white;
+    font-weight: 800;
+    font-size: 70px;
+    text-align: center;
+}
+
+.landing-apartaments-button-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.landing-apartaments-button-container > button
+{
+    background-color: transparent;
+    color: white;
+    border: 4px solid white;
+    padding: 5px;
+    -webkit-transition: border 1s;
+    -webkit-transition: background-color 1s;
+}
+
+.landing-apartaments-button-container > button:hover
+{
+    border: 4px solid transparent;
+    background-color: #BACDEA;
+}
+
+.landing-about-container {
+    height: 400px;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.landing-about-text {
+    width: 1000px;
+    color: white;
+    text-align: center;
+}
+
+.landing-about-container-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.landing-contacts-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 400px;
+    background-image: url("http://server.apartaments/contacts.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.landing-contacts-container-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

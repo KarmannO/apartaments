@@ -1,5 +1,5 @@
 'use strict';
-var serviceBase = 'http://server.apartaments';
+var serviceBase = 'http://server.apartaments/';
 var yii2AngApp = angular.module('yii2AngApp', [
     'ngRoute',
     'yii2AngApp.site',
